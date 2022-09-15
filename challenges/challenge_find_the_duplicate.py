@@ -1,2 +1,7 @@
 def find_duplicate(nums):
-    """Faça o código aqui."""
+    if not nums or len(nums) < 2:
+        return False
+
+    for idx in nums:
+        if nums[idx] != int:
+            return False
