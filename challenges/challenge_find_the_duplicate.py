@@ -6,6 +6,10 @@ def find_duplicate(nums):
         if type(i) != int or i < 0:
             return False
 
+    return duplicate_number(nums)
+
+
+def duplicate_number(nums):
     nums.sort()
     index = 0
     repeated_number = None
@@ -17,7 +21,3 @@ def find_duplicate(nums):
     if repeated_number is None:
         return False
     return repeated_number
-
-
-if __name__ == "__main__":
-    find_duplicate([1, 2, 2, 3])
