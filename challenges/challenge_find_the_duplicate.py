@@ -17,3 +17,7 @@ def find_duplicate(nums):
     if repeated_number is None:
         return False
     return repeated_number
+
+
+if __name__ == "__main__":
+    find_duplicate([1, 2, 2, 3])
